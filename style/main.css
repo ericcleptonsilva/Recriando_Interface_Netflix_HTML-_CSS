@@ -8,13 +8,111 @@ box-sizing: border-box;
     --vermelho: #E50914;
     --preta: #141414;
 }
-
+/* Elementos Base*/
 body{
 background-color: var(--preta);
 font-family: 'Times New Roman', Times, serif;
-
+color: white;
 }
 
 header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:rgb(144, 144, 144);
+}
+/*filme principal - House of cards*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house-of-card.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-left: 10px;
+    
+}
+
+.filme-principal .titulo{
+    margin-left: 10px;
+    margin-top: 15%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    margin-left: 5px;
+   
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+.bt-assitir{
+    width: 164px;
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.bt-infor{
+    
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border: 0px;
+    margin-left: 10px;
+}
+
+
+.bt-assitir .bt-infor{
+    background-color: white;
+    color: black;
+    
+    
+}
+
+.bt-assitir i{
+    margin-right: 5px;
+}
+.bt-infor i{
+    margin-right: 5px;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
 
 }
